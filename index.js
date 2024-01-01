@@ -1,5 +1,11 @@
 // INDEX DE LA NHOATECA
 
+/** En este proyecto la idea es crear una biblioteca donde tenemos:
+* Ruta de la página inicial
+* Ruta de productos
+* Ruta de usuarios
+*/
+
 // .env
 require('dotenv').config()
 // Express
@@ -31,4 +37,5 @@ app.use('/productos', productosRoute)
 // Importar usuarios
 app.use('/usuarios', usuariosRoute)
 
+// Puerta para utiliar el servidor
 app.listen(process.env.PORT)
